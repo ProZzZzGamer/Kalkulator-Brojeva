@@ -6,17 +6,18 @@ public class Main {
 
         int[] nizBr = new int[4];
         int brojac = 0;
-        int index = 0;
+
+        System.out.println("Unesi četri broja");
+        System.out.println();
 
         while (brojac < 4) {
-            nizBr[index] = unos.nextInt();
+            nizBr[brojac] = unos.nextInt();
             brojac++;
-            index++;
         }
 
         System.out.println();
-        System.out.println("Zbir prvog i zadnjeg index-a je: " + (nizBr[0] + nizBr[3]));
+        System.out.println("Zbir prvog i zadnjeg broja je: " + (nizBr[0] + nizBr[3]));
         System.out.println();
-        System.out.println("Zbir druog i trećeg index-a je: " + (nizBr[1] + nizBr[2]));
+        System.out.println("Zbir druog i trećeg broja je: " + (nizBr[1] + nizBr[2]));
     }
 }
